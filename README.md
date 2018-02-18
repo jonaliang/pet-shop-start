@@ -1,6 +1,6 @@
 # Pet Shop
 
-This is the completed DApp for the Pet Shop workshop
+This is the empty DApp for the Pet Shop workshop. View the completed DApp [here](https://github.com/shionwahch/pet-shop)
 
 ## Installation
 
