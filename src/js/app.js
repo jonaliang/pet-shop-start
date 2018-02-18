@@ -45,7 +45,7 @@ App = {
     });
   },
 
-  markAdopted: function(pets, account) {
+  markAdopted: function() {
     var petShopInstance;
 
     App.contracts.PetShop.deployed().then(function(instance) {
@@ -90,16 +90,15 @@ App = {
     });
   },
 
-  getPetShopBalance: function(pets, account) {
+  getPetShopBalance: function() {
     var petShopInstance;
 
     App.contracts.PetShop.deployed().then(function(instance) {
       petShopInstance = instance;
-      console.log(instance);
 
       return petShopInstance.getBalance.call();
     }).then(function(data) {
-      console.log(data);
+      console.log(data.toNumber());
     }).catch(function(err) {
       console.log(err.message);
     });
